@@ -8,14 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        
+        <img src="mustang.jpg" alt="Imagen de Auto" class="img-preview" id="img-preview">
+        <h1 class="text-up">Wallpapers</h1>
+    </div>
+        <figure class="images">
+            
+            <img onclick="imgsrc('mustang.jpg')" src="mustang.jpg" alt="Imagen de Auto" class="img">
+            <img onclick="imgsrc('subaru.jpg')" src="subaru.jpg" alt="Imagen de Auto" class="img">
+            <img onclick="imgsrc('mustangrtr.jpg')" src="mustangrtr.jpg" alt="Imagen de Auto" class="img">
+            <img onclick="imgsrc('subaru1.jpg')" src="subaru1.jpg" alt="Imagen de Auto" class="img">
+        </figure>
     
-    <img src="mustang.jpg" alt="Imagen de Auto" class="img-preview" id="img-preview">
-    <figure class="images">
-        <img onclick="imgsrc('mustang.jpg')" src="mustang.jpg" alt="Imagen de Auto" class="img">
-        <img onclick="imgsrc('subaru.jpg')" src="subaru.jpg" alt="Imagen de Auto" class="img">
-        <img onclick="imgsrc('mustangrtr.jpg')" src="mustangrtr.jpg" alt="Imagen de Auto" class="img">
-        <img onclick="imgsrc('subaru1.jpg')" src="subaru1.jpg" alt="Imagen de Auto" class="img">
-    </figure>
 
     <script>
         function imgsrc(source) {
