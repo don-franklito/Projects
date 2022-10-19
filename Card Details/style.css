@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+body {
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.background {
+    width: 30%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cardback {
+    position: absolute;
+    height: 200px;
+    top: 375px;
+    left: 17%;
+    color: #fff;
+}
+
+.cardfront {
+    position: absolute;
+    height: 200px;
+    top: 150px;
+    left: 12%;
+    color: #fff;
+}
+
+.cardfront img, .cardback img {
+    height: 100%;
+}
+
+.cardfront p, .cardback p {
+    position: absolute;
+}
+
+.circlebig {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background-color: white;
+}
+
+.circlesmall {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+.confirm {
+    width: 100%;
+    padding: 10px 0;
+    background: hsl(278, 68%, 11%);
+    color: white;
+    border-radius: 7px;
+}
+
+.container {
+    width: 340px;
+}
+
+.container p {
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cvv {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.cvvcard {
+    top: 88px;
+    right: 45px;
+}
+
+.emblems {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 20px;
+    left: 15px;
+    gap: 10px;
+}
+
+.errtext {
+    color: red;
+    margin-top: 3px;
+    margin-bottom: 40px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.errtexts {
+    display: flex;
+    gap: 10px;
+}
+
+.errtexts p:nth-child(1), .errtexts p:nth-child(2) {
+    width: 25%;
+}
+
+.errtexts p:nth-child(3) {
+    width: 50%;
+    margin-left: 10px;
+    padding-left: 2px;
+}
+
+.expcard {
+    bottom: 25px;
+    right: 40px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.form-section {
+    margin-left: 55%;
+    padding: 20px;
+    width: 100%;
+}
+
+.form-section p {
+    margin-bottom: 5px;
+}
+
+.inputs {
+    gap: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 30px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(208, 208, 208);
+    font-size: 14.4px;
+}
+
+#mm, #yy {
+    width: 25%;
+}
+
+.namecard {
+    text-transform: uppercase;
+    bottom: 25px;
+    left: 15px;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.numcard {
+    bottom: 60px;
+    left: 15px;
+    width: 340px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.texts, .inputs {
+    display: flex;
+}
+
+.texts p:nth-last-child(1) {
+    margin-left: 27px;
+}
+
+.text-end {
+    opacity: 0.6;
+    font-weight: bold;
+}
+
+.tick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 25px;
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+    background-image: linear-gradient(to bottom right, hsl(249, 99%, 64%) , hsl(278, 94%, 30%));
+}
+
+.ty {
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+::placeholder {
+    opacity: 0.6;
+}
+
+
+
