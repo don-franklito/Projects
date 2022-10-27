@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Lexend+Deca&family=Outfit&display=swap');
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%)
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Outfit','Karla';
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    background-color: var(--main-bg);
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 50px auto;
+    max-width: 300px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+    background-color: var(--card-bg);
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 98.5%;
+    width: 100%;
+    opacity: 0;
+    background-color: var(--cyan);
+    border-radius: 5px;
+}
+
+.view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+
+.text-content {
+    border-bottom: solid var(--line) 1px;
+}
+
+.text-content h1 {
+    margin: 15px auto;
+    font-size: 18.4px;
+    letter-spacing: 1px;
+}
+
+h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.text-content p {
+    font-size: 16px;
+    font-weight:300;
+    color: hsl(215, 51%, 70%);   
+}
+
+.eth-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 1.4rem;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+span.price {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+
+span.days {
+    color: hsl(215, 51%, 70%);
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.creator {
+    display: flex;
+    margin-top: 15px;
+}
+
+.creator p, span.name {
+    font-size: 14px;
+}
+
+span.name:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.avatar {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 2rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+p.text-c {
+    color: hsl(215, 51%, 70%);
+    line-height: 32px;
+}
+
+.image:hover .overlay {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.image:hover .overlay + .view {
+    display: block;
+}
