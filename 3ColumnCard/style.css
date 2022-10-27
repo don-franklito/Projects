@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, a {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: 'Lexend Deca';
+  font-size: 15px; 
+  color: #fff;
+}
+
+.container {
+    display: grid;
+    align-items:center;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 100px auto;
+    max-width:950px;
+}
+
+.column {
+    height: 400px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img img {
+    height: 40px;
+    width: 64px
+}
+
+.heading {
+   padding-top: 50px;
+   padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.button {
+  align-items: center;
+  border-radius: 25px;
+  border: none;
+  justify-items: center;
+  height: 50px;
+  width: 145px;
+}
+
+.sedan-car {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 12px 0px 0px 12px;
+}
+
+.sedan-car .button a {
+    color: #E28525 ;
+    cursor: pointer;
+}
+
+.suv-car {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suv-car .button a {
+    color: hsl(184, 100%, 22%);
+    cursor: pointer;
+}
+
+.luxury-car {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 12px 12px 0px;
+}
+
+.luxury-car .button a {
+    color: hsl(179, 100%, 13%);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: transparent;
+    border: solid #fff 3px;
+}
+
+.button:hover a {
+    color: #fff;
+}
+
+/****************** Responsive **************/
+@media screen and (min-width: 300px) and (max-width: 760px) {
+    .container {
+       grid-template-columns: repeat(1, 3fr);
+       margin-top: 0px;
+       width: 80%;
+    }
+
+    .sedan-car {
+      border-radius: 12px 12px 0px 0px;
+    }
+
+    .luxury-car{
+      background-color: #00403F;
+      border-radius: 0px 0px 12px 12px;
+    }
+}
