@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Karla','Raleway';
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 100px auto;
+    max-width: 600px;
+    box-shadow: 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sub-container {
+    display: flex;
+}
+
+.top-column {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.title h1 {
+    font-weight: 700;
+    font-size: 32px;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 22px;
+}
+
+.subtitle p {
+    font-weight: 700;
+    font-size: 18.72px;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 10px;
+}
+
+.paragraph p {
+    color: hsl(218, 22%, 67%);
+    line-height: 22px;
+}
+
+.sw-content {
+    justify-content: center;
+    align-items: center;
+
+}
+
+.subscription-column {
+    display: block;
+    width: 300px;
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 10px;
+    color: hsl(204, 43%, 93%);
+    padding: 30px;
+}
+
+.pf {
+    margin-top: 15px;
+}
+
+.title h2 {
+    font-weight: 400;
+    font-size: 18.72px;
+    margin-bottom: 22px;
+    color: #fff;
+}
+
+strong {
+    font-size: 35px;
+    padding-right: 10px;
+    line-height: 1em;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16.72px;
+}
+
+.button {
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    padding: 10px;
+    width: 240px;
+    color: #fff;
+    margin-top: 28px;
+    text-align: center;
+}
+
+.why-us-column {
+    display: block;
+    width: 300px;
+    padding: 30px;
+    background-color: hsl(179, 47.2%, 51.8%);
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .top-column {
+        width: 100%;
+    }
+    
+    .subscription-column {
+        width: 100%;
+        float: none;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .why-us-column {
+        width: 100%;
+        float: none;
+        border-bottom-left-radius: 10px;
+    }
+    .sub-container {
+        display: inline;
+    }
+    
+    .button {
+       width: 100%; 
+    }
+}
