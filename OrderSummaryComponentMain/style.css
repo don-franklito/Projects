@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--pale-blue);
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.card {
+    padding: 1.25rem;
+    position: absolute;
+    top: 10%;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 30px 30px 0 0;
+    margin-bottom: 1.25rem;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.top-content h1 {
+    font-weight: 900;
+    font-size: 1.625rem;
+    margin-bottom: 1rem;
+    color: var(--dark-blue);
+}
+
+.top-content p {
+    padding: 0px 25px;
+    letter-spacing: 1px;
+    color: var(--desaturated-blue);
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+}
+
+.subs-content {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+
+}
+
+.subs-content img {
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.container > div.subs-content {
+    padding: 15px;
+    margin: 25px auto;
+}
+
+.subs-content a:hover {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.column-plan {
+    font-size: 14px;
+    text-align: left;
+    color: var(--desaturated-blue);
+}
+
+.column-plan h2 {
+    font-size: 14px;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+.subs-content a {
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.bot-content {
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+.bot-content button {
+    width: 90%;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+    font-weight: 900;
+    font-family: 'Red Hat Display';
+    /* letter-spacing: 0.5px; */
+    background-color: var(--bright-blue);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.bot-content a {
+    color: var(--desaturated-blue);
+    font-weight: 900;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    /* letter-spacing: 0.1px; */
+} 
+
+.bot-content button:hover {
+    background-color: var(--desaturated-blue);
+}
+
+.bot-content a:hover {
+    color: var(--dark-blue);
+}
+
+@media (min-width: 500px) {
+    .card {
+        max-width: 480px;
+        left: calc(50% - 240px);
+    }
+}
+
+
+/* -- Feel free to remove these styles or customise in your own stylesheet 👍  */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
