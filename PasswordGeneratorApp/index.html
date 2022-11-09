@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator App</title>
+</head>
+<body>
+    <h1>Password Generator App</h1>
+    <section>
+        <div class="container">
+            <form id="pass-form">
+                <div class="password">
+                    <input type="text" name="genPass" id="genPass" placeholder="Min 6 car">
+
+                    <div class="c-pass">
+                        <ion-icon name="clipboard-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="opts">
+                        <label for="length">Length</label>
+                        <input type="number" name="length" id="length" value="12" min="6">    
+                    </div>
+                    <div class="opts">
+                        <label for="capital">Capital Letters</label>
+                        <input type="checkbox" name="capital" id="capital" checked>    
+                    </div>
+                    <div class="opts">
+                        <label for="small">Small Letters</label>
+                        <input type="checkbox" name="small" id="small" checked>    
+                    </div>
+                    <div class="opts">
+                        <label for="number">Numbers</label>
+                        <input type="checkbox" name="number" id="number" checked>    
+                    </div>
+                    <div class="opts">
+                        <label for="symbol">Special Char</label>
+                        <input type="checkbox" name="symbol" id="symbol" checked>    
+                    </div>
+                </div>
+
+                <button type="submit">Generate Password</button>
+            </form>
+        </div>
+
+    </section>
+
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
